@@ -42,4 +42,6 @@ print(current_dateTime + " search done " + searchStatement)
 search.send_keys(Keys.ENTER)
 print(current_dateTime + " Key ENTER done")
 
+
+
 print(current_dateTime + " Test end")
