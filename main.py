@@ -32,9 +32,9 @@ for link in links:
 
 search = driver.find_element(By.NAME, "stext")
 if search != 0:
-    print(current_dateTime + " Element has found")
+    print(current_dateTime + " Element found")
 else:
-    print(current_dateTime + " Element has not found")
+    print(current_dateTime + " Element not found")
 
 searchStatement = "RTX 3070"
 search.send_keys(searchStatement)
