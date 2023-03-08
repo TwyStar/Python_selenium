@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
+import RandomStringGenerator
 
 options = Options()
 options.add_experimental_option("detach", True)
@@ -36,11 +37,12 @@ if search != 0:
 else:
     print(current_dateTime + " Element not found")
 
-searchStatement = "RTX 3070"
+searchStatement = RandomStringGenerator.get_random_strin(10)
 search.send_keys(searchStatement)
 print(current_dateTime + " search done " + searchStatement)
 search.send_keys(Keys.ENTER)
 print(current_dateTime + " Key ENTER done")
+
 
 
 
